@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Modern Lights</a>
+        <div class="header-right">
+            <a href="#contact">Home</a>
+          <a href="#contact">Activity</a>
+          <a href="#about">About</a>
+          <a class="active" href="#home" style="width: 239px;">Call Now:987654321</a>
+        </div>
+      </div>
+      
+
+      <div class="bg-image" style="
+      height: 450px;
+  "></div>
+
+<div class="bg-text">
+  <h2>Good Food Good Life</h2>
+  <h1 style="font-size:50px">“Never Eat more than you can lift.”</h1>
+  <p>Best chefs</p>
+</div>
+
+   <br>
+   
+   
+
+   <div class="container"   style="
+   width: 1332px;
+   margin-left: 130px;
+">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message</p>
+    </div>
+    <div class="row">
+      <div class="column" style="
+      margin-left: 230px;
+      margin-top: 80px;
+      margin-right: 10px;
+  ">
+        <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Type Your Name..">
+          <label for="lname">Email Id</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter Your Id..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Send</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+      
+      <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("navbar").style.padding = "80px 10px";
+          document.getElementById("logo").style.fontSize = "35px";
+        }
+      }
+      </script>
+
+
+
+
+<br><br><br><br>
+
+
+
+<button class="collapsible" style="
+width: 1300px;
+border-radius: 30px;
+margin-bottom: 10px;
+">Open Section 1</button>
+<div class="content" width:="1300" style="max-height: 110px;width: 1300px;border-radius: 30px;">
+  <p style="
+  width: 1264px;
+  border-radius: 30px;
+margin-bottom: 10px;
+">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+
+
+
+</div>
+<br>
+
+<button class="collapsible" style="
+width: 1200px;
+border-radius: 30px;
+margin-bottom: 10px;
+">Open Section 2</button>
+<div class="content" width:="1200px" style="max-height: 90px;width: 1200px;border-radius: 30px;">
+  <p style="
+  width: 1200px;
+">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<br>
+<button class="collapsible" style="
+width: 1100px;
+border-radius: 30px;
+">Open Section 3</button>
+<div class="content" width:="1100px" style="max-height: 90px;width: 1100px;border-radius: 30px;">
+  <p style="
+  width: 1080px;
+  border-radius: 30px;
+">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<br>
+<br><br>
+
+
+<div class="container" id="Services">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="main_heading">
+				<h1 style="margin-left: 700px;">Services</h1>
+				<div  class="text-center"><span class="underline"></span></div>
+			</div>
+		</div><!-- End col-md-12 -->
+	</div><!-- End row -->
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<br><br>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/671956/pexels-photo-671956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">Chef</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button" style="
+            border-radius: 10px;
+        ">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3771106/pexels-photo-3771106.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Mike Ross</h2>
+          <p class="title">Chef</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button" style="
+            border-radius: 10px;
+        ">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4252146/pexels-photo-4252146.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="John" style="width:100%">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Chef</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button" style="
+            border-radius: 10px;
+        ">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <p>Developed by Rahul Rouh@2021</p>
+  </div>
+    
+
+</body>
+</html>
